@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# use syntax (./cewlforloop file)
+while read line
+    do 
+        defanged=$(echo "$line" | tr -d '/')
+        mkdir "$defanged"
+        cd "$defanged"
+        cewl -m 8 -w $defanged"api.txt" -a --meta_file $defanged"api-meta.txt" -e --email_file $defanged"api-email.txt" $line
+        cd ..
+        
+    done < $1
