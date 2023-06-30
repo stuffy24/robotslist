@@ -12,3 +12,4 @@ Python3 robotslist.py -t https://www.website.com
 To save the output simply redirect with below syntax. 
 Python3 robotslist.py -t https://www.website.com > saved.txt
 
+The cewl_script_for_files.txt is simply the bash script i use with the robots.py program to scrape these directories and gather information. 
